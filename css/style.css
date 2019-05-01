@@ -1,0 +1,32 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grey {
+    background-color: grey;
+    border: 1px solid grey;
+    width: 700px;
+    height: 200px;
+    margin: 250px auto;
+}
+.white {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+}
+.block {
+    width: 200px;
+}
+.virtual img {
+    background-position: 0 0;
+}
+.cloud img {
+    background-position: 30px 0;
+}
+.server img {
+    background-position: 60px 0;
+}
