@@ -6,27 +6,33 @@
     padding: 0;
 }
 .grey {
-    background-color: grey;
-    border: 1px solid grey;
-    width: 700px;
-    height: 200px;
-    margin: 250px auto;
+    background-color: grey; /*Установка фона цветом серый*/
+    border: 1px solid grey; /*Грацина (размер, тип линии, цвет) к блоку серого цвета*/
+    width: 600px; /*Ширина серого блока*/
+    height: 200px; /*Высота серого блока*/
+    margin: 250px auto; /*Внешний отступ серого блока по вертикали и горизонтали соответсвенно*/
+    padding: 10px; /*Внутренний отступ в сером блоке (образование рамки)*/
 }
 .white {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    display: flex;
+    background-color: white; /*Установка фона цветом белый*/
+    border: 1px solid white; /*Грацина (размер, тип линии, цвет) к блоку белого цвета*/
+    border-radius: 20px; /*Установка круглой границы к блоку белого цвета*/
+    display: flex; /*Отражение детей белого блока в один ряд, flex устанавливается родителю*/
 }
 .block {
-    width: 200px;
+    width: 200px; /*Ширина всех белых блоков*/
+    text-align: center; /*Выравнивание контента по центру всех белых блоков*/
 }
 .virtual img {
-    background-position: 0 0;
+    background-position: 10px 10px;
 }
 .cloud img {
-    background-position: 30px 0;
+    background-position: 30% 0;
 }
 .server img {
-    background-position: 60px 0;
+    background-position: 60% 0;
+}
+.name {
+    color: orangered;
+
 }
