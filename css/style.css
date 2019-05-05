@@ -1,33 +1,31 @@
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /*Ширина и высота будет установлена не контенту, а всему блоку для конкретного браузера*/
+    -moz-box-sizing: border-box; /*Ширина и высота будет установлена не контенту, а всему блоку для конкретного браузера*/
+    box-sizing: border-box; /*Ширина и высота будет установлена не контенту, а всему блоку*/
     margin: 0;/*Внешние отступы элементов*/
     padding: 0; /*Внутренние отступы элементов*/
 } /*Обнуление стандартных настроек*/
 .grey {
     background-color: grey; /*Установка фона цветом серый*/
-    border: 0 solid grey; /*Грацина (размер, тип линии, цвет) к блоку серого цвета*/
-    width: 600px; /*Ширина серого блока*/
-    height: 220px; /*Высота серого блока*/
+    width: 620px; /*Ширина серого блока*/
+    height: 170px; /*Высота серого блока*/
     margin: 250px auto; /*Внешний отступ серого блока по вертикали и горизонтали соответсвенно*/
     padding: 11px; /*Внутренний отступ в сером блоке (образование рамки)*/
 }
 .white {
     background-color: white; /*Установка фона цветом белый*/
-    border: 1px solid white; /*Грацина (размер, тип линии, цвет) к блоку белого цвета*/
     border-radius: 7px; /*Установка круглой границы к блоку белого цвета*/
     display: flex; /*Отражение детей белого блока в один ряд, flex устанавливается родителю*/
-    padding: 8px 0;
+    height: 100%;/*Высота большого белого блока*/
+    padding: 5px;/*Внутренний отступ в сером блоке (образование рамки)*/
 }
 .block {
-    width: 200px; /*Ширина всех белых блоков*/
-    height: 180px; /*Высота всех белых блоков*/
+    width: 33.3%; /*Ширина всех белых блоков*/
     text-align: center; /*Выравнивание текста по центру всех белых блоков*/
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid lightgrey; /*Правая граница белых блоков ( размер, тип линии, цвет линии)*/
 }
 .block:last-child{
-    border-right: none;
+    border-right: none; /*Правая граница последнего белого блока не установлена*/
 }
 .block-img {
     height: 42px; /*Высота картинки-спрайт*/
@@ -49,21 +47,22 @@
     font-family: Roboto;
 }
 @font-face {
-    font-family: Roboto;
-    src: url("../fonts/RobotoBold/RobotoBold.ttf");
-    src: url("../fonts/RobotoBold/RobotoBold.eot");
-    src: url("../fonts/RobotoBold/RobotoBold.woff");
+    font-family: "RobotoBold";
+    src: url("font.css");
 }
 .bottom {
     height: 30px; /*Высота кнопки*/
     width: 100px; /*Ширина кнопки*/
     background-color: orangered; /*Фон кнопки*/
-    color: white; /*Цвет текста кнопки*/
     border: 1px solid orangered; /*Грацина (размер, тип линии, цвет) к блоку серого цвета*/
     border-radius: 3px; /*Установка круглой границы к кнопке*/
     margin: 0 auto; /*Расположение кнопки по центру*/
     padding: 5px; /*Отступ текста от границ кнопки*/
 }
 .block > div {
-    margin-top: 15px;
+    margin-top: 7px; /*Детям класса .block (картинка, название, цена, кнопка) установка внешнего отступа сверху*/
+}
+a {
+    text-decoration: none; /*Оформление текста ссылки без подчеркивания*/
+    color: white; /*Цвет теста ссылки*/
 }
