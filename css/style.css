@@ -44,11 +44,7 @@
 }
 .name-service {
     color: orangered; /*Цвет текста для наименования услуги*/
-    font-family: Roboto;
-}
-@font-face {
     font-family: "RobotoBold";
-    src: url("font.css");
 }
 .bottom {
     height: 30px; /*Высота кнопки*/
